@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form action="{{url_for('editData',register_id=register.id)}}" method="post">
+    Name: <br><input type="text" name="name" placeholder="name" value="{{register.name}}"><br><br>
+    surname:<br> <input type="text" name="surname" placeholder="surname" value="{{register.surname}}"><br><br>
+    mobile: <br><input type="text" name="mobile" placeholder="mobile number" value="{{register.mobile}}"><br><br>
+    email: <br><input type="email" name="email" placeholder="email" value="{{register.email}}"><br><br>
+    branch: <br><input type="text" name="branch" placeholder="branch" value="{{register.branch}}"><br><br>
+    role:<br> <input type="text" name="role" placeholder="role" value="{{register.role}}"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
